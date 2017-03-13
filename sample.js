@@ -3,7 +3,7 @@ window.onload=function(){
 }
 var logDiv;
 var log = function(){ console.log(arguments); logDiv.innerHTML+=arguments[0]+"<BR>"; }
-var socket = io.connect('http://localhost');// 1
+var socket = io.connect('http://node-js.azurewebsites.net');// 1
 
 socket.on('connect', function() { // 2
   log('connected');
