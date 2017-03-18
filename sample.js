@@ -15,4 +15,5 @@ socket.on('connect', function() { // 2
 
 function ping(){
   var text = document.getElementById("text").value;
-  socket.emit('msg send', text); // 3 }
+  socket.emit('msg send', text); // 3
+}
